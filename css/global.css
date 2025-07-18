@@ -4,10 +4,14 @@
     /* Colores */
     --color-primary: #121712;
     --color-secondary: #638763;
+    --color-white: #fff;
     --color-green: #DBE5DB;
     --color-green-light: #F0F5F0;
     --color-green-strong: #14B814;
 
     /* Tipografías */
     --font-family: "Plus Jakarta Sans", sans-serif;
+
+    /* Otros */
+    --border-radius: 8px;
 }

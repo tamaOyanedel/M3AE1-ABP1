@@ -13,84 +13,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"></head>
 <body>
     <header>
-        <img src="img/icon/logo.png" alt="Logo VerdeModa">
-        <h1>VerdeModa</h1>
-        <nav class="navBar">
-            <ul>
-                <li><a href="">Shop</a></li>
-                <li><a href="">About US</a></li>
-                <li><a href="">Sustainability</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="links">
-            <ul>
-                <li><a href=""><img src="img/icon/lupa.png" alt="Buscar"></a></li>
-                <li><a href=""><img src="img/icon/login.png" alt="Iniciar sesión"></a></li>
-                <li><a href=""><img src="img/icon/shop.png" alt="Comprar"></a></li>
-            </ul>
-        </nav>
+        <div class="header__logo">
+            <img src="img/icon/logo.png" alt="Logo VerdeModa">
+            <h1>VerdeModa</h1>
+        </div>
+        <div class="header__nav">
+            <nav class="header__navBar">
+                <ul>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">About US</a></li>
+                    <li><a href="">Sustainability</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="header__navLinks">
+                <ul>
+                    <li><a href=""><img src="img/icon/lupa.png" alt="Buscar"></a></li>
+                    <li><a href=""><img src="img/icon/login.png" alt="Iniciar sesión"></a></li>
+                    <li><a href=""><img src="img/icon/shop.png" alt="Comprar"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
+        <!--Banner-->
         <section class="section-banner">
-            <h2>Dress Responsibly</h2>
-            <p>Explore our collection of eco-friendly fashion, crafted with care for the planet and your style.</p>
-            <button>Shop Now</button>
+            <h2 class="section-bsnner__title">Dress Responsibly</h2>
+            <p class="section-banner__text">Explore our collection of eco-friendly fashion, crafted with care for the planet and your style.</p>
+            <button class="section-banner__button">Shop Now</button>
         </section>
+
+        <!--Products-->
         <section class="section-products">
-            <h4>Freatured Products</h3>
-            <div>
-                <img src="img/Productos/producto1.png" alt="Vestido">
-                <h5>Eco-Chic Dress</h4>
-                <p>Elegant and eco-conscious, perfect for any occasion.</p>
-            </div>
-            <div>
-                <img src="img/Productos/producto2.png" alt="Camisa">
-                <h5>Sustainable Style Shirt</h4>
-                <p>Comfortable and stylish, made with sustainable materials.</p>
-            </div>
-            <div>
-                <img src="img/Productos/producto3.png" alt="Accesorios">
-                <h5>Eco-Friendly Accessories</h4>
-                <p>Complete your look with our range of sustainable accessories.</p>
+            <h4 class="section-products__title">Featured Products</h4>
+            <div class="section-products_items">
+                <div class="section-products_item">
+                    <img src="img/Productos/producto1.png" alt="Vestido">
+                    <h5>Eco-Chic Dress</h4>
+                    <p>Elegant and eco-conscious, perfect for any occasion.</p>
+                </div>
+                <div class="section-products_item">
+                    <img src="img/Productos/producto2.png" alt="Camisa">
+                    <h5>Sustainable Style Shirt</h4>
+                    <p>Comfortable and stylish, made with sustainable materials.</p>
+                </div>
+                <div class="section-products_item">
+                    <img src="img/Productos/producto3.png" alt="Accesorios">
+                    <h5>Eco-Friendly Accessories</h4>
+                    <p>Complete your look with our range of sustainable accessories.</p>
+                </div>
             </div>
         </section>
+
+        <!--Sustainable-->
         <section class="section-sustainable">
-            <h3>Sustainable Practices</h3>
-            <p>At VerdeModa, we are committed to sustainability in every step of our process, from sourcing materials to production and packaging.</p>
-            <div>
-                <img src="img/icon/reclicar.png" alt="Recycled">
-                <h5>Recycled Materials</h5>
-                <p>We use recycled materials to reduce waste and minimize our environmental impact.</p>
-            </div>
-            <div>
-                <img src="img/icon/natural.png" alt="Eco-Friendly">
-                <h5>Eco-Friendly Production</h5>
-                <p>Our production processes are designed to minimize energy and water usage.</p>
-            </div>
-            <div>
-                <img src="img/icon/love.png" alt="Ethical Sourcing">
-                <h5>Ethical Sourcing</h5>
-                <p>We partner with suppliers who share our commitment to ethical and sustainable practices.</p>
+            <h3 class="section-sustainable__title">Sustainable Practices</h3>
+            <p class="section-sustainable__text">At VerdeModa, we are committed to sustainability in every step of our process, from sourcing materials to production and packaging.</p>
+            <div class="section-sustainable__items">
+                <div class="section-sustainable__item">
+                    <img src="img/icon/reclicar.png" alt="Recycled">
+                    <h5>Recycled Materials</h5>
+                    <p>We use recycled materials to reduce waste and minimize our environmental impact.</p>
+                </div>
+                <div class="section-sustainable__item">
+                    <img src="img/icon/natural.png" alt="Eco-Friendly">
+                    <h5>Eco-Friendly Production</h5>
+                    <p>Our production processes are designed to minimize energy and water usage.</p>
+                </div>
+                <div class="section-sustainable__item">
+                    <img src="img/icon/love.png" alt="Ethical Sourcing">
+                    <h5>Ethical Sourcing</h5>
+                    <p>We partner with suppliers who share our commitment to ethical and sustainable practices.</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <nav class="navFooter">
+        <nav class="footer__navFooter">
             <ul>
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Terms of Service</a></li>
                 <li><a href="">Shipping & Returns</a></li>
             </ul>
         </nav>
-        <nav class="socialMedia">
+        <nav class="footer__socialMedia">
             <ul>
                 <li><a href=""><img src="img/icon/instagram.png" alt="Instagram"></a></li>
                 <li><a href=""><img src="img/icon/facebook.png" alt="Facebook"></a></li>
                 <li><a href=""><img src="img/icon/twitter.png" alt="Twitter"></a></li>
             </ul>
         </nav>
-        <p>@2024 VerdeModa. All rights reserved.</p>
+        <p class="footer__text">@2024 VerdeModa. All rights reserved.</p>
     </footer>
 </body>
 </html>

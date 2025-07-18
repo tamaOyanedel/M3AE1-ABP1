@@ -1,8 +1,222 @@
-h1{
+body{
     font-family: var(--font-family);
+    color: var(--color-primary);
+
+}
+h1{
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
-    letter-spacing: 0px;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -1px;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 40px;
+}
+.header__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 135px;
+}
+.header__logo img{
+    width: 16px;
+    height: 16px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__navBar ul, .header__navLinks ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+.header__navBar a, .header__navLinks a{
+    text-decoration: none;
+}
+.header__navBar a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 18px;
     color: var(--color-primary);
+}
+.header__navLinks a{
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-green-light);
+    display: flex;
+}
+
+/* MAIN */
+main{
+    padding: 20px 160px;
+    border-top: 1px solid var(--color-green-light);
+}
+
+/* BANNER */
+.section-banner{
+    background-image:url(/img/banner.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius);
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-banner__text, .section-bsnner__title{
+    color: var(--color-white);
+}
+.section-bsnner__title{
+    margin: 176px 0 0;
+}
+.section-banner__button{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius:var(--border-radius);
+    border-style: none;
+    background-color: var(--color-green-strong);
+    color: var(--color-white);
+    margin: 20px 0 150px;
+    cursor: pointer;
+}
+
+/* PRODUCTS */
+.section-products{
+    margin: 20px 8px 12px;
+}
+.section-products__title{
+    padding: 0 8px;
+}
+.section-products_items{
+    display: flex;
+    justify-content: space-between;
+}
+.section-products_item{
+    width: 33.3%;
+    padding: 0 8px;
+}
+.section-products_item img{
+    width: 100%;
+}
+.section-products_item h5{
+    margin: 16px 0 0;
+}
+.section-products_item p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+/* SUSTAINABLE */
+.section-sustainable{
+    margin: 40px 8px;;
+}
+.section-sustainable__title{
+    margin: 0;
+    padding: 0 8px;
+}
+.section-sustainable__text{
+    padding: 0 8px;
+}
+.section-sustainable__items{
+    display: flex;
+    justify-content: space-between;
+}
+.section-sustainable__item{
+    width: 33.3%;
+    margin: 0 8px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-green);
+    padding: 16px;
+}
+.section-sustainable__item h5{
+    margin: 0;
+}
+.section-sustainable__item p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+/* FOOTER */
+footer{
+    padding: 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__navFooter{
+    padding: 40px 16px 0;
+    width: 100%;
+}
+.footer__navFooter ul{
+    justify-content: space-between;
+}
+.footer__navFooter ul, .footer__socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+.footer__socialMedia li{
+    padding: 0 8px;
+}
+.footer__navFooter a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-secondary);
+}
+.footer__text{
+    color: var(--color-secondary);
 }
