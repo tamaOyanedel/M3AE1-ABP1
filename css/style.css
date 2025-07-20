@@ -103,12 +103,14 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 .section-banner__text, .section-bsnner__title{
     color: var(--color-white);
 }
-.section-bsnner__title{
+.section-banner__tittle{
     margin: 176px 0 0;
+    color: var(--color-white);
 }
 .section-banner__button{
     font-family: var(--font-family);
@@ -219,4 +221,110 @@ footer{
 }
 .footer__text{
     color: var(--color-secondary);
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .header__nav{
+        flex-direction: column;
+    }
+    .header__navBar a{
+        padding: 0 10px;
+    }
+    main{
+        padding: 20px 0;
+    }
+    .section-banner{
+        margin: 0;
+    }
+    .section-banner__tittle{
+        margin: 45px 0 0;
+    }
+    .section-banner__text{
+        margin: 0 16px;
+    }
+    .section-banner__button{
+        margin: 20px 0 45px;
+    }
+    .section-products{
+        margin: 20px 0 12px;
+        text-align: center;
+    }
+    .section-products_items{
+        flex-direction: column;
+    }
+    .section-products_item{
+        width: 100%;
+        padding: 0 0 16px;
+    }
+    .section-products_item img{
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .section-sustainable{
+        text-align: center;
+        margin: 40px 0px;
+    }
+    .section-sustainable__items{
+        flex-direction: column;
+    }
+    .section-sustainable__item{
+        width: 100%;
+        margin: 8px 0;
+    }
+    footer{
+        padding: 0;
+    }
+    .footer__navFooter{
+        padding: 0;
+    }
+    .footer__navFooter ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    header{
+        margin: 12px 20px;
+    }
+    .header__nav{
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+    .header__navLinks ul{
+        margin: 0;
+    }
+    main{
+        padding: 20px;
+    }
+    .section-banner{
+        margin: 0;
+    }
+    .section-products{
+        margin: 20px 0 0;
+    }
+    .section-sustainable{
+        margin: 40px 0;
+    }
+    footer{
+        padding: 0 20px;
+    }
+}
+
+/* Large devices */
+@media (max-width: 1199px) {
+    main{
+        padding: 20px 60px;
+    }
+    footer{
+        padding: 0 60px;
+    }
 }
